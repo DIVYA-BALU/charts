@@ -1,0 +1,16 @@
+<div>
+    <label for="month">Select Month:</label>
+    <select id="month" [(ngModel)]="selectedMonth" (change)="onMonthChange(selectedMonth)">
+      <option *ngFor="let month of months" [value]="month">{{ month }}</option>
+    </select>
+  </div>
+  <div>
+    <label for="year">Select Year:</label>
+    <select id="year" [(ngModel)]="selectedYear" (change)="onYearChange(selectedYear)">
+      <option *ngFor="let year of years" [value]="year">{{ year }}</option>
+    </select>
+  </div>
+  <div class="chart">
+    <p-chart type="bar" [data]="data"></p-chart>
+  </div>
+  
