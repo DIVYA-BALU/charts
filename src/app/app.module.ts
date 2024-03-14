@@ -9,13 +9,17 @@ import { ChartModule } from 'primeng/chart';
 import { PiechartComponent } from './components/piechart/piechart.component';
 import { FormsModule } from '@angular/forms';
 import { DensitymapComponent } from './components/densitymap/densitymap.component';
+import { HeatmapComponent } from './components/heatmap/heatmap.component';
+import { LinechartComponent } from './components/linechart/linechart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BarchartComponent,
     PiechartComponent,
-    DensitymapComponent
+    DensitymapComponent,
+    HeatmapComponent,
+    LinechartComponent
   ],
   imports: [
     BrowserModule,

@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
 import * as L from 'leaflet';
+import 'leaflet.heat';
 import { User } from 'src/app/model/user';
 import { UserserviceService } from 'src/app/services/userservice.service';
 import { HttpClient } from '@angular/common/http';
+import { MapResponse } from 'src/app/model/map-response';
 
 @Component({
   selector: 'app-densitymap',
@@ -14,7 +16,7 @@ export class DensitymapComponent {
 
 
   constructor(private userService: UserserviceService, private http: HttpClient) { }
-  dataResponse: User[] = [];
+  dataResponse: MapResponse[] = [];
 
   ngOnInit() {
     this.userService.getAllUsers().subscribe(
@@ -38,7 +40,7 @@ export class DensitymapComponent {
 
     this.dataResponse.forEach((record) => {
 
-      L.circleMarker([record.latitude, record.longitude], {
+      L.circleMarker([record.latitude, record.longitude, record.count], {
         radius: 10,
         color: 'blue',
         fillColor: '#3388ff',
