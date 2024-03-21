@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.selectors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.selector {
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.line-chart {
+    width: 80%; 
+}

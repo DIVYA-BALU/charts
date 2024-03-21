@@ -1,3 +1,24 @@
-.chart{
-    width: 90%;
-}
+.selector-container {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .selector-label {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+  
+  .selector {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  .chart {
+    width: 70%;
+  }

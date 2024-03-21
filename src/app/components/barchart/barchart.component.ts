@@ -17,7 +17,7 @@ export class BarchartComponent {
 
   ngOnInit(): void {
     const currentDate = new Date();
-    this.selectedMonth = currentDate.getMonth() + 1;
+    this.selectedMonth = currentDate.getMonth()+1;
     this.selectedYear = currentDate.getFullYear();
 
     this.fetchData();
